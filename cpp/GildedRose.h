@@ -20,5 +20,12 @@ public:
     GildedRose(vector<Item> & items);
     
     void updateQuality();
+
+private:
+    void updateNormalQuality(Item & item);
+    void updateAgedQuality(Item & item);
+    void updateBackstageQuality(Item & item);
+    void updateConjuredQuality(Item & item);
+    void refineQuality(Item & item);
 };
 
